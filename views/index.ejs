@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos desde la Base de Datos</title>
+    <!-- Importar el archivo JavaScript principal -->
+    <script src="/scripts/main.js" defer></script>
+    defer></script>
+</head>
+<body>
+    <h1>Datos desde la Base de Datos</h1>
+    <ul>
+        <% data.forEach(item => { %>
+            <li><%= item.nombre %></li> <!-- Mostrar el nombre del item -->
+        <% }) %>
+    </ul>
+    <!-- views/index.ejs -->
+    <h2>Resultados del archivo principal (main.js)</h2>
+    <p>Resultado de sumar 5 y 3: <%= sumaResultado %></p>
+    <p>Texto convertido a mayúsculas: <%= textoEnMayusculas %></p>
+    <p>Presentación de la persona: <%= presentacionPersona %></p>
+</body>
+</html>
